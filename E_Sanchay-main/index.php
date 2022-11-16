@@ -1,4 +1,4 @@
-be sure to copy this in wamp directory to run this (into some folder)
+<!-- be sure to copy this in wamp directory to run this (into some folder)
 
 Also create a folder 
 ProductImage/Fridge
@@ -58,7 +58,7 @@ admin
 | adminID    | int          | NO   | PRI | NULL    | auto_increment |
 | adminEmail | varchar(255) | NO   |     | NULL    |                |
 +------------+--------------+------+-----+---------+----------------+
-
+ -->
 
 
 
