@@ -1,0 +1,35 @@
+.loginwrapper .loginForm {
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .loginwrapper .log {
+    width: 500px;
+    background-color: red;
+    /* background-color:aquamarine; */
+    border: 1px solid #77c602;
+    border-radius: 20px;
+  }
+  .loginwrapper .login {
+    margin-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .loginwrapper .loginHeader {
+    padding-top: 30px;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #f2f2f2;
+    background-color: #414c4d;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .loginwrapper .form-outline {
+    background-color: white;
+    border-radius: 10px;
+  }
+  

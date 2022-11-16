@@ -1,0 +1,125 @@
+<footer id="footer" class="footer">
+
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-info">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span>E-SANCHAY</span>
+        </a>
+        <p>An waste management website which collects old and non-functional electronic equipments and in exchanage of that cash is provided to the seller, then we sell those products collected to our vendors who recycle the waste </p>
+        <div class="social-links d-flex mt-4">
+          <a href="https://twitter.com/regain_e" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100084952402576" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/e__regain/" class="instagram"><i class="bi bi-instagram"></i></a>
+          <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Services</a></li>
+  
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <!-- <li><a href="#">Web Design</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Product Management</a></li>
+          <li><a href="#">Marketing</a></li>
+          <li><a href="#">Graphic Design</a></li> -->
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contact Us</h4>
+        <p>
+          845, Shivaji Nagar <br> Pune <br> Maharashtra 411004 <br><br>
+          <strong>Phone:</strong> +91 20 6757 6200 <br>
+          +91 83 3425 8923<br>
+          <strong>Email:</strong> info@example.com<br>
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>E-SANCHAY</span></strong>. All Rights Reserved
+    </div>
+   
+  </div>
+
+</footer><!-- End Footer -->
+<!-- End Footer -->
+
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<div id="preloader"></div>
+</div>
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script>
+  function displayDivDemo(id, elementValue) {
+     document.getElementById(id).style.display = elementValue.value == 1 ? 'block' : 'none';
+  }
+</script>
+<!-- <script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+<script>
+// var phnoLength = function() {
+//     if()
+// }
+
+var passLength = function() {
+    
+    if(document.getElementById('password').value.length <= 6){
+        document.getElementById('passLabel').style.color = 'red';
+        document.getElementById('passLabel').innerHTML = 'Password must be greater than 6 characters';
+        document.getElementById('submit').disabled = true;
+    } else {
+        document.getElementById('passLabel').style.color = 'green';
+        document.getElementById('passLabel').innerHTML = 'good';
+        document.getElementById('submit').disabled = false;
+    }
+}
+
+var check = function() {
+    if (document.getElementById('password').value == document.getElementById('conf_password').value) {
+        // if(document.getElementById('password').value.length <= 6){
+        //     document.getElementById('message').innerHTML = 'Password must be greater than 6 characters';
+            
+        // }
+      document.getElementById('message').style.color = 'green'; 
+      document.getElementById('message').innerHTML = ' ';
+      document.getElementById('submit').disabled = false;
+    } else {
+      document.getElementById('message').style.color = 'red';
+      document.getElementById('message').innerHTML = 'password not matching';
+      document.getElementById('submit').disabled = true;
+    }
+}
+</script>
+</body>
+
+</html>
