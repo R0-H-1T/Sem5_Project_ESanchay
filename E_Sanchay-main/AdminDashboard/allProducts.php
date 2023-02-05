@@ -59,7 +59,7 @@
 
         <div class="productBox">
             <div class="productInBox">
-                <center><h1 style="margin-bottom:50px;">Displaying all products</h1></center>
+                <center><h1 style="margin-bottom:50px;">Displaying all products</h1>
 
 
 
@@ -235,6 +235,7 @@
 
             </div> <!--productInBox -->
         </div> <!--productBox -->
+        </center>
     </div>
 </div>
 
