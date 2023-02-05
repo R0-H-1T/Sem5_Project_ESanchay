@@ -19,12 +19,12 @@
             $mail->setFrom('dummyusermail022@gmail.com', 'Dummy');           
             $mail->addAddress($recEmail);
             //$mail->addAddress('receiver2@gfg.com', 'Name');
-        
+        // C:\wamp64\www\rohit\Project\E_Solution\Sem5_Project_ESanchay\E_Sanchay-main\Reset.php
             $mail->isHTML(true);                                  
             $mail->Subject = 'Subject';
             $mail->Body    = '<b>Click the below link to change your password.<br>
             If you haven\'t sent such a request please ignore this mail. Thanks!</b><br> 
-            <a href="http://localhost/Projects/E_Sanchay-main/E_Sanchay-main/Reset.php?email='.$recEmail.'">RESET PASSWORD</a>';
+            <a href="http://localhost/rohit/Project/E_Solution/Sem5_Project_ESanchay/E_Sanchay-main/Reset.php?email='.$recEmail.'">RESET PASSWORD</a>';
             //http://localhost/Projects/E_Sanchay-main/E_Sanchay-main/Reset.php?email='.$recEmail.'">RESET PASSWORD</a>';
             //$mail->AltBody = 'Body in plain text for non-HTML mail clients';
             $mail->send();
@@ -96,7 +96,7 @@
                     Reset Password
                   </button>
                 </div>
-                <span>Don't have an account? <a href="./LoginRegister/trial.php">sign in</a></span>
+                <span>Don't have an account? <a href="./LoginRegister/register.php">sign in</a></span>
               </form>
             </div>
           </div>
