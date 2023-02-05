@@ -31,10 +31,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("<center><h1 style='background-color:red; color:white;'>You can upload only 3 images</h1></center>");
     }
     $imgPaths = "";
+    //echo $_FILES['uploadfile']['name'][0];
+
     foreach($_FILES['uploadfile']['name'] as $key=>$value){
         $imgPaths .= uploadimage("$itemName", $key);
         $filename = $_FILES['uploadfile']['name'][$key];
+       //echo $_FILES["uploadfile"]["tmp_name"][$key];
+        //echo  $_FILES['uploadfile']['name'][$key];
     }
+    //phpinfo();
+    //die("Done");
     //echo $imgPaths;
     $imgarr = removehash($imgPaths);
     $count = 0; ?>
