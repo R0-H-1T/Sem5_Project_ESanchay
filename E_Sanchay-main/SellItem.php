@@ -824,7 +824,7 @@ case "headphone": ?>
 
 
 
-                                    <input class="form-control" id="fileInput" type="file" name="uploadfile[]" value="" multiple required  />
+                                    <input class="form-control" id="fileInput" type="file" name="uploadfile[]"  multiple required  />
                                   </div>
                                 </div>
 

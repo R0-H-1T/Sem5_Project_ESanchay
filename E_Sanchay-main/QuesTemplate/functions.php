@@ -14,7 +14,7 @@ function uploadImage($productCat, $key){
     //echo "File is an image - " . $check["mime"] . ".";
     $uploadOk = 1;
   } else {
-    echo "File is not an image.";
+    echo "<center><h1>File is not an image.</center></h1>";
     $uploadOk = 0;
   }
   
@@ -27,20 +27,23 @@ function uploadImage($productCat, $key){
   
   // Check file size
   if ($_FILES["uploadfile"]["size"][$key] > 500000) {
-    echo "Sorry, your file is too large.";
+    echo "<center><h1>Sorry, your file is too large.</h1></center>";
     $uploadOk = 0;
   }
   
   // Allow certain file formats
   if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
   && $imageFileType != "jfif" ) {
-    echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+    echo "<center><h1>Sorry, only JPG, JPEG, PNG & GIF files are allowed.</center></h1>";
     $uploadOk = 0;
   }
   
   // Check if $uploadOk is set to 0 by an error
   if ($uploadOk == 0) {
-    die("Sorry, your file was not uploaded.");
+    //header( "refresh:3;url=SellItem?itemName=fridge" );
+    die("<center><h1>Sorry, your file was not uploaded.</h1><a href='SellItem?itemName=$productCat'> Go Back?</a></center>");
+    
+      
   // if everything is ok, try to upload file
   } else {
       if(file_exists($target_file)){
