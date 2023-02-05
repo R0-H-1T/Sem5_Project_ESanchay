@@ -60,7 +60,9 @@ admin
 +------------+--------------+------+-----+---------+----------------+
  -->
 
-
+<?php
+  session_start();
+?>
 
 
 <!DOCTYPE html>
@@ -139,7 +141,7 @@ admin
           <!-- <li><a href="login.php">LOGIN/SIGN UP</a></li> -->
 
           <?php
-          session_start();
+          
           
             
             if(empty($_SESSION['logged'])){ ?>
